@@ -40,3 +40,6 @@ button:disabled { opacity: .45; cursor: not-allowed; }
 .msg { min-height: 22px; font-size: 14px; }
 .err { color: var(--pulse); }
 footer { margin-top: 48px; color: var(--text2); font-size: 13px; }
+.cta { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 22px; border-radius: 14px; font-weight: 700; text-decoration: none; background: var(--volt); color: #0a0c0b; }
+.msg.err { color: var(--pulse); }
+[hidden] { display: none !important; }
