@@ -221,10 +221,10 @@ footer.site nav { display: flex; flex-wrap: wrap; gap: 20px; }
 footer.site a { text-decoration: none; } footer.site a:hover { color: var(--text); }
 
 /* görünürken belirme */
-.reveal { opacity: 0; transform: translateY(28px); transition: opacity .8s ease, transform .8s cubic-bezier(.2, .8, .2, 1); }
-.reveal.in { opacity: 1; transform: none; }
+.js .reveal { opacity: 0; transform: translateY(28px); transition: opacity .8s ease, transform .8s cubic-bezier(.2, .8, .2, 1); }
+.js .reveal.in { opacity: 1; transform: none; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
-  .reveal { opacity: 1; transform: none; }
+  .js .reveal { opacity: 1; transform: none; }
 }
 :focus-visible { outline: 2px solid var(--volt); outline-offset: 3px; border-radius: 8px; }
