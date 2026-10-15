@@ -4,22 +4,286 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>FORMA · Forma gir. Her set sayılır.</title>
-<meta name="description" content="FORMA: öğrenci, eğitmen ve YZ koçu buluşturan antrenman takibi.">
-<link rel="stylesheet" href="style.css">
+<meta name="description" content="FORMA; antrenmanını set set takip eden, 1.333 hareketi kendi animasyonlarıyla gösteren, YZ koçu ve gerçek eğitmeni aynı yerde buluşturan antrenman uygulaması. İlk YZ programın ücretsiz.">
+<meta name="theme-color" content="#0A0C0B">
+<meta property="og:title" content="FORMA · Forma gir. Her set sayılır.">
+<meta property="og:description" content="Set set antrenman takibi, 1.333 animasyonlu hareket, YZ koç ve eğitmenin tek uygulamada.">
+<meta property="og:image" content="https://mhmtmutlu.github.io/forma-app/shots/og.png">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=Onest:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="landing.css">
 </head>
 <body>
-<main>
-<header>
-  <a class="brand" href="./">FORMA</a>
-  <nav><a href="gizlilik/">Gizlilik</a><a href="kvkk/">KVKK</a><a href="hesap-silme/">Hesap silme</a></nav>
+
+<header class="top" id="top">
+  <div class="wrap">
+    <a class="brand" href="./" aria-label="FORMA ana sayfa"><img src="apple-touch-icon.png" alt=""><span>FORMA</span></a>
+    <nav aria-label="Sayfa">
+      <a href="#antrenman">Antrenman</a>
+      <a href="#koc">YZ Koç</a>
+      <a href="#egitmen">Eğitmen</a>
+      <a href="#sss">SSS</a>
+      <a class="btn btn-volt" href="#indir">Erken erişim</a>
+    </nav>
+  </div>
 </header>
-<h1>Forma gir. Her set sayılır.</h1>
-<p>FORMA; öğrenci, eğitmen ve YZ koçu buluşturan antrenman takip uygulamasıdır.</p>
-<p class="muted">Destek: <a href="mailto:apps.support.mm@gmail.com">apps.support.mm@gmail.com</a></p>
-<footer>© 2026 Mehmet Mutlu</footer>
+
+<main>
+<!-- ============ hero -->
+<section class="hero">
+  <div class="wrap grid">
+    <div>
+      <span class="eyebrow">Antrenman takibi · YZ koç · Eğitmen</span>
+      <h1 class="display"><span class="line">Forma gir.</span><span class="line slant volt">Her set</span><span class="line">sayılır.</span></h1>
+      <p class="lead">Salonda telefonla boğuşma. FORMA bugünkü antrenmanını önüne koyar, setini işaretlersin, dinlenmeni sayar, ilerlemeni hatırlar.</p>
+      <div class="cta">
+        <a class="btn btn-volt" href="#indir">Erken erişime katıl</a>
+        <a class="btn btn-ghost" href="#antrenman">Nasıl çalışır?</a>
+      </div>
+      <div class="store-note"><span class="dot"></span>iPhone için TestFlight'ta · App Store'da yakında</div>
+    </div>
+    <div class="stage" aria-hidden="true">
+      <div class="phone"><img src="shots/bugun.webp" alt="" width="1320" height="2868" fetchpriority="high"></div>
+      <div class="chip rest">
+        <svg class="ring" viewBox="0 0 46 46"><circle class="bg" cx="23" cy="23" r="19"/><circle class="fg" id="ring" cx="23" cy="23" r="19" stroke-dasharray="119.4" stroke-dashoffset="0"/></svg>
+        <div><b id="rest">01:30</b><small>Dinlenme</small></div>
+      </div>
+      <div class="chip points"><b class="volt">+10</b><div>Set tamam<small>Lig puanı</small></div></div>
+      <div class="chip pr"><b style="color:var(--ember)">PR</b><div>Squat · 120 kg<small>Yeni rekor</small></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="track">
+    <span>1.333 hareket</span><span>Kendi animasyonlarımız</span><span>İlk YZ programı ücretsiz</span><span>Çevrimdışı çalışır</span><span>Eğitmeninle bağlan</span><span>Haftalık lig</span>
+    <span>1.333 hareket</span><span>Kendi animasyonlarımız</span><span>İlk YZ programı ücretsiz</span><span>Çevrimdışı çalışır</span><span>Eğitmeninle bağlan</span><span>Haftalık lig</span>
+  </div>
+</div>
+
+<!-- ============ özellikler -->
+<section id="antrenman">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Salonda, tek elle</span>
+      <h2 class="display">Antrenman <span class="volt slant">akışta</span> kalsın.</h2>
+      <p>Her ekran ter içinde, ayakta, tek elle kullanılmak için tasarlandı: büyük dokunma alanları, net sayılar, gereksiz hiçbir şey.</p>
+    </div>
+
+    <div class="feature reveal">
+      <div class="shot"><div class="phone"><img src="shots/antrenman.webp" alt="FORMA antrenman ekranı: hareket animasyonu, set ve tekrar bilgisi" width="1320" height="2868" loading="lazy"></div></div>
+      <div>
+        <span class="eyebrow">Canlı antrenman</span>
+        <h3 class="display">Seti bitir, gerisini FORMA sayar.</h3>
+        <p>Hareketi animasyonla gör, ağırlığı ve tekrarı tek dokunuşla ayarla, seti işaretle. Dinlenme sayacı kendiliğinden başlar; süre dolunca titreşimle haber verir.</p>
+        <ul class="ticks">
+          <li>Geçen ağırlıklarını hatırlar, bir sonraki seti hazır getirir</li>
+          <li>Antrenman sırasında ekran kapanmaz; uygulama kapansa da kaldığın yerden sürer</li>
+          <li>Plansız güne ek antrenman: hareketleri, setleri ve kiloları önce planla, sonra başla</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="feature flip reveal" style="--glow: rgba(124, 200, 255, .16)">
+      <div class="shot"><div class="phone"><img src="shots/kutuphane.webp" alt="FORMA hareket kütüphanesi: kas gruplarına göre 1.333 hareket" width="1320" height="2868" loading="lazy"></div></div>
+      <div>
+        <span class="eyebrow">Hareket kütüphanesi</span>
+        <h3 class="display">1.333 hareket. Hepsi hareket ediyor.</h3>
+        <p>12 kas grubu, serbest ağırlıktan makineye, vücut ağırlığından kardiyoya. Her hareket FORMA'nın kendi çizdiği figürle, doğru formuyla oynar; kadın ya da erkek figürüyle izle.</p>
+        <ul class="ticks">
+          <li>Kas grubuna ya da ada göre anında arama</li>
+          <li>Hareket kartında kas grubu, ekipman ve adım adım yapılışı</li>
+          <li>Tek dokunuşla programındaki güne ekle</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="feature reveal" id="koc" style="--glow: rgba(200, 255, 46, .2)">
+      <div class="shot"><div class="phone"><img src="shots/program.webp" alt="FORMA haftalık program ekranı" width="1320" height="2868" loading="lazy"></div></div>
+      <div>
+        <span class="eyebrow">YZ Koç</span>
+        <h3 class="display">Programın <span class="volt">hazır.</span> İlki bizden.</h3>
+        <p>Yaşını, kilonu, boyunu, kaç gün çalışabileceğini ve hedefini söyle; YZ koç sana uygun haftalık programı kursun. İlk YZ programın ücretsiz. İstersen programını kendin de kurabilirsin.</p>
+        <ul class="ticks">
+          <li>Gün gün hareket, set, tekrar ve dinlenme süreleri</li>
+          <li>Deneyimine ve hedefine göre ayarlanmış hacim</li>
+          <li>Rahatsızlıklarını belirtirsen ona göre seçim (açık rızanla)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ sayılar -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="stats reveal">
+      <div class="stat"><b>1.333</b><span>animasyonlu hareket</span></div>
+      <div class="stat"><b>12</b><span>kas grubu</span></div>
+      <div class="stat"><b>0 ₺</b><span>ilk YZ programı</span></div>
+      <div class="stat"><b>%100</b><span>çevrimdışı kullanım</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ bento -->
+<section id="egitmen" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Tek başına değil</span>
+      <h2 class="display">Eğitmen, lig, <span class="volt slant">motivasyon.</span></h2>
+      <p>FORMA yalnızca bir defter değil. Eğitmeninle bağlan, arkadaşlarınla yarış, seriyi bozma.</p>
+    </div>
+    <div class="bento">
+      <article class="card wide reveal">
+        <div class="icon"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.8-3.6 3.4-5.5 6.5-5.5s5.7 1.9 6.5 5.5"/><path d="M16 4.5a3.5 3.5 0 0 1 0 7"/><path d="M18 14.7c1.8.7 3 2.5 3.5 5.3"/></svg></div>
+        <h4>Eğitmeninle bağlan</h4>
+        <p>Eğitmeninden aldığın davet koduyla bağlan. Eğitmenin programını yazar, antrenmanlarını görür, ilerlemeni takip eder; sen onaylamadan hiçbir program değişmez.</p>
+        <span class="big">01</span>
+      </article>
+      <article class="card wide ember reveal">
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4Z"/><path d="M17 5h3v2a3 3 0 0 1-3 3M7 5H4v2a3 3 0 0 0 3 3"/></svg></div>
+        <h4>Haftalık lig</h4>
+        <p>Her set, tamamlanan gün ve kişisel rekor puan kazandırır. Haftanın sonunda ligde yerini gör; ara verirsen puan erir, geri dönersen bonus kazanırsın.</p>
+        <span class="big">02</span>
+      </article>
+      <article class="card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 3c1 3.5 5 5.5 5 10a5 5 0 0 1-10 0c0-2.5 1.5-4 2.5-5 .3 2 1.5 3 2.5 3 0-3-1-5.5 0-8Z"/></svg></div>
+        <h4>Seri ve rozet</h4>
+        <p>Planladığın günlerde antrenmanı tamamla, seriyi büyüt, rozetleri topla.</p>
+      </article>
+      <article class="card ice reveal">
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M6 8a6 6 0 1 1 12 0c0 7 3 8 3 8H3s3-1 3-8"/><path d="M10.3 20a1.9 1.9 0 0 0 3.4 0"/></svg></div>
+        <h4>Hatırlatma</h4>
+        <p>Antrenman günlerinde, seçtiğin saatte nazik bir hatırlatma.</p>
+      </article>
+      <article class="card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 3 4 6v6c0 4.5 3.4 8.3 8 9 4.6-.7 8-4.5 8-9V6l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg></div>
+        <h4>Önce gizlilik</h4>
+        <p>Hesapsız da kullanılır; veriler önce telefonunda tutulur. Hesabını uygulamadan tek adımda silebilirsin.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ adımlar -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">2 dakikada başla</span>
+      <h2 class="display">Üç adım. <span class="volt slant">Sonra salon.</span></h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><h4>Kendini tanıt</h4><p>Hedefin, deneyimin, haftada kaç gün çalışacağın. Hesap açmadan başlayabilirsin.</p></div>
+      <div class="step reveal"><h4>Programını al</h4><p>Hesap aç, ilk YZ programın ücretsiz. Ya da kütüphaneden kendi programını kur, eğitmeninin programını kabul et.</p></div>
+      <div class="step reveal"><h4>Set set ilerle</h4><p>Bugünün antrenmanı ana ekranda. Seti işaretle, dinlen, puanı topla.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ galeri -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Uygulamadan</span>
+      <h2 class="display">Ekranlar.</h2>
+    </div>
+    <div class="gallery reveal" tabindex="0" aria-label="Uygulama ekran görüntüleri">
+      <figure><div class="phone"><img src="shots/bugun.webp" alt="Bugün ekranı" width="1320" height="2868" loading="lazy"></div><figcaption>Bugün</figcaption></figure>
+      <figure><div class="phone"><img src="shots/antrenman.webp" alt="Antrenman ekranı" width="1320" height="2868" loading="lazy"></div><figcaption>Antrenman</figcaption></figure>
+      <figure><div class="phone"><img src="shots/dinlenme.webp" alt="Dinlenme sayacı" width="1320" height="2868" loading="lazy"></div><figcaption>Dinlenme</figcaption></figure>
+      <figure><div class="phone"><img src="shots/program.webp" alt="Program ekranı" width="1320" height="2868" loading="lazy"></div><figcaption>Program</figcaption></figure>
+      <figure><div class="phone"><img src="shots/kutuphane.webp" alt="Hareket kütüphanesi" width="1320" height="2868" loading="lazy"></div><figcaption>Kütüphane</figcaption></figure>
+      <figure><div class="phone"><img src="shots/hareket.webp" alt="Hareket detayı" width="1320" height="2868" loading="lazy"></div><figcaption>Hareket</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ saat -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="watch-band reveal">
+      <div class="watch" aria-hidden="true">
+        <div class="w-top">B GÜNÜ · 3/6</div>
+        <div><div class="w-ex">Bench Press</div><div class="w-set">Set 2/4 · 8 tekrar · 80 kg</div></div>
+        <div class="w-btn">Set tamam</div>
+      </div>
+      <div>
+        <span class="badge">Yakında</span>
+        <h3 class="display">Telefon cebinde kalsın.</h3>
+        <p>Apple Watch için FORMA geliyor: bugünün hareketi bileğinde, seti saatten işaretle, dinlenme sayacı titreşimle haber versin. Telefonla anında eşitlenir.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ sss -->
+<section id="sss" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Sık sorulanlar</span>
+      <h2 class="display">Merak edilenler.</h2>
+    </div>
+    <div class="faq reveal">
+      <details><summary>FORMA ücretli mi?</summary><p>Antrenman takibi, hareket kütüphanesi, kendi programını kurma ve lig ücretsizdir. Hesap açınca ilk YZ programın da ücretsiz; sonraki YZ programları uygulama içinden program başına satın alınır. Eğitmenle çalışmak eğitmenin belirlediği aylık ücretle yapılır.</p></details>
+      <details><summary>Hesap açmam gerekiyor mu?</summary><p>Hayır. Hesapsız başlayıp programını kendin kurabilirsin; veriler telefonunda kalır. YZ programı, eğitmenle bağlantı, lig ve yedekleme için hesap gerekir.</p></details>
+      <details><summary>İnternet olmadan çalışır mı?</summary><p>Evet. Antrenman, program ve kütüphane çevrimdışı çalışır; bağlantı geldiğinde hesabınla eşitlenir.</p></details>
+      <details><summary>Sağlık bilgilerim ne oluyor?</summary><p>Rahatsızlık bilgisi yalnızca açık rıza verirsen kaydedilir ve yalnızca programını sana uygun hâle getirmek için kullanılır. Ayrıntılar <a class="volt" href="kvkk/">KVKK Aydınlatma Metni</a>'nde.</p></details>
+      <details><summary>Hesabımı nasıl silerim?</summary><p>Uygulamada Profil → Hesabımı sil adımlarıyla ya da <a class="volt" href="hesap-silme/">hesap silme sayfasından</a> anında silebilirsin.</p></details>
+      <details><summary>Android sürümü var mı?</summary><p>Önce iPhone ile başlıyoruz; Android sürümü yol haritamızda.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ kapanış -->
+<section class="final" id="indir">
+  <div class="wrap">
+    <span class="eyebrow">Erken erişim</span>
+    <h2 class="display">Forma <span class="volt slant">gir.</span></h2>
+    <p class="muted" style="max-width:52ch;margin:0 auto 30px;position:relative">FORMA şu an TestFlight'ta. İlk deneyenlerden olmak için bize yaz, davet bağlantısını gönderelim.</p>
+    <div class="cta">
+      <a class="btn btn-volt" href="mailto:apps.support.mm@gmail.com?subject=FORMA%20erken%20eri%C5%9Fim">Davet iste</a>
+      <a class="btn btn-ghost" href="mailto:apps.support.mm@gmail.com">Bize yaz</a>
+    </div>
+  </div>
+</section>
 </main>
+
+<footer class="site">
+  <div class="wrap">
+    <span>© 2026 Mehmet Mutlu · FORMA</span>
+    <nav aria-label="Yasal"><a href="gizlilik/">Gizlilik Politikası</a><a href="kvkk/">KVKK</a><a href="hesap-silme/">Hesap silme</a><a href="mailto:apps.support.mm@gmail.com">Destek</a></nav>
+  </div>
+</footer>
+
+<script>
+  // Üst çubuk gölgesi
+  const top = document.getElementById('top');
+  addEventListener('scroll', () => top.classList.toggle('scrolled', scrollY > 8), { passive: true });
+
+  // Görünürken belirme
+  const io = 'IntersectionObserver' in window ? new IntersectionObserver((es) => es.forEach((e) => {
+    if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+  }), { threshold: 0.12 }) : null;
+  document.querySelectorAll('.reveal').forEach((el) => io ? io.observe(el) : el.classList.add('in'));
+
+  // Hero dinlenme sayacı (uygulamadaki gibi 90 sn)
+  const still = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const label = document.getElementById('rest'), ring = document.getElementById('ring');
+  const total = 90, len = 119.4;
+  let left = total;
+  const draw = () => {
+    label.textContent = `${String(Math.floor(left / 60)).padStart(2, '0')}:${String(left % 60).padStart(2, '0')}`;
+    ring.style.strokeDashoffset = String(len * (1 - left / total));
+  };
+  draw();
+  if (!still) setInterval(() => { left = left <= 0 ? total : left - 1; draw(); }, 1000);
+</script>
 </body>
 </html>
