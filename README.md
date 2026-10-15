@@ -35,6 +35,7 @@
 | ✨ **YZ koç** | Yaşını, kilonu, boyunu, haftada kaç gün çalışacağını ve hedefini söyle; sana uygun haftalık programı kursun. **İlk YZ programın ücretsiz.** |
 | 🧑‍🏫 **Eğitmeninle bağlan** | Davet koduyla bağlan. Eğitmenin programını yazar, antrenmanlarını görür; sen onaylamadan hiçbir program değişmez. |
 | 🏆 **Haftalık lig** | Set, tamamlanan gün ve kişisel rekor puan kazandırır. Seriyi koru, rozetleri topla. |
+| ⌚ **Apple Watch** | Antrenmanı saatten başlat, seti dokunarak ya da çift dokunma hareketiyle onayla, dinlenme bitince titreşim al, canlı nabzını gör. Nabız verin cihazından çıkmaz. |
 | 🔒 **Önce gizlilik** | Hesapsız da kullanılır, veriler önce telefonunda tutulur. Hesabını uygulamadan tek adımda silebilirsin. |
 
 ## Ekranlar
@@ -43,7 +44,6 @@
 
 ## Yakında
 
-- ⌚ **Apple Watch:** bugünün hareketi bileğinde; seti saatten işaretle.
 - 🤖 **Android** sürümü.
 
 ---
