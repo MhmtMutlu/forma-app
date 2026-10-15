@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hesap Silme · FORMA</title>
+<meta name="description" content="FORMA hesabını ve tüm verini kalıcı olarak silme.">
+<link rel="stylesheet" href="../style.css">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+</head>
+<body>
+<main>
+<header>
+  <a class="brand" href="../">FORMA</a>
+  <nav><a href="../gizlilik/">Gizlilik</a><a href="../kvkk/">KVKK</a><a href="./" aria-current="page">Hesap silme</a></nav>
+</header>
+
+<h1>Hesabını sil</h1>
+<p>Hesabını uygulamadan <strong>Profil → Hesap → Hesabımı sil</strong> ile silebilirsin. Uygulamaya erişemiyorsan aşağıdan giriş yaparak da silebilirsin.</p>
+
+<h2>Silinecekler</h2>
+<ul>
+  <li>Hesabın, e-posta adresin ve profil bilgilerin</li>
+  <li>Sunucudaki antrenman geçmişin, puanların, rozetlerin ve lig sıralaman</li>
+  <li>Programların, YZ program geçmişin ve kullanılmamış YZ kredilerin (iade edilmez)</li>
+  <li>Yüklediğin tahlil / rapor dosyaların</li>
+  <li>Eğitmen bağların ve (eğitmensen) davet kodların</li>
+</ul>
+<p class="muted">Silme kalıcıdır ve hemen uygulanır; yedeklerden en geç 30 gün içinde çıkar. Mevzuat gereği saklamamız gereken satın alma kayıtları yasal süre boyunca tutulur. Mağaza makbuzların Apple / Google hesabında kalır. Cihazındaki hesapsız veriler uygulamayı silince silinir.</p>
+
+<h2>Giriş yap ve sil</h2>
+<form id="f" autocomplete="on">
+  <label>E-posta <input id="email" type="email" autocomplete="email" required></label>
+  <label>Şifre <input id="password" type="password" autocomplete="current-password" required></label>
+  <label>Onaylamak için <strong>SİL</strong> yaz <input id="confirm" autocomplete="off" required></label>
+  <button id="go" class="danger" type="submit" disabled>Hesabımı kalıcı olarak sil</button>
+  <div id="msg" class="msg" role="status" aria-live="polite"></div>
+</form>
+<p class="muted">Şifreni hatırlamıyorsan uygulamadaki “Şifremi unuttum” ile sıfırlayabilir veya <a href="mailto:apps.support.mm@gmail.com?subject=Hesap%20silme%20talebi">apps.support.mm@gmail.com</a> adresine kayıtlı e-postandan yazabilirsin; talebini en geç 30 gün içinde yerine getiririz.</p>
+
+<footer>© 2026 Mehmet Mutlu · <a href="../gizlilik/">Gizlilik</a> · <a href="../kvkk/">KVKK</a></footer>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.117.3/dist/umd/supabase.min.js"></script>
+<script>
+  // Herkese açık (publishable) anahtar: uygulamada da açıktır; erişim sunucuda RLS ve Edge Function ile korunur.
+  const SUPABASE_URL = 'https://bbbouflqqgatyzijulnk.supabase.co';
+  const SUPABASE_KEY = 'sb_publishable_CvrYBXyACRUpw33rxd_0Gg_po449j1m';
+  const sb = supabase.createClient(SUPABASE_URL, SUPABASE_KEY, { auth: { persistSession: false } });
+  const $ = (id) => document.getElementById(id);
+  const ok = () => $('confirm').value.trim().toLocaleUpperCase('tr-TR').replace(/I/g, 'İ') === 'SİL';
+  $('confirm').addEventListener('input', () => { $('go').disabled = !ok(); });
+  const say = (t, err) => { $('msg').textContent = t; $('msg').className = 'msg' + (err ? ' err' : ''); };
+  $('f').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    if (!ok()) return;
+    $('go').disabled = true;
+    say('Giriş yapılıyor…');
+    const { error: signErr } = await sb.auth.signInWithPassword({ email: $('email').value.trim(), password: $('password').value });
+    if (signErr) { say('Giriş başarısız: e-posta veya şifre hatalı.', true); $('go').disabled = false; return; }
+    say('Hesabın siliniyor…');
+    const { error } = await sb.functions.invoke('account/delete', { body: { confirm: 'SİL' } });
+    await sb.auth.signOut({ scope: 'local' }).catch(() => {});
+    if (error) { say('Hesap silinemedi. Lütfen tekrar dene veya bize yaz.', true); $('go').disabled = false; return; }
+    $('f').reset();
+    say('Hesabın ve tüm verin kalıcı olarak silindi.');
+  });
+</script>
+</body>
+</html>
