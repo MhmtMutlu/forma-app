@@ -6,7 +6,7 @@
 
 <p align="center">
   FORMA bugünkü antrenmanını önüne koyar, dinlenmeni sayar, ilerlemeni hatırlar.<br>
-  <b>1.333 animasyonlu hareket · YZ koç · gerçek eğitmen · haftalık lig</b>
+  <b>1.353 animasyonlu hareket · YZ koç · Pilates · haftalık lig</b>
 </p>
 
 <p align="center">
@@ -31,11 +31,13 @@
 | | |
 |---|---|
 | 🏋️ **Canlı antrenman** | Hareketi animasyonla gör, ağırlığı ve tekrarı tek dokunuşla ayarla, seti işaretle. Dinlenme sayacı kendiliğinden başlar, süre dolunca titreşimle haber verir. |
-| 🎞️ **1.333 hareket** | 12 kas grubu: serbest ağırlık, makine, vücut ağırlığı, kardiyo. Her hareket FORMA'nın kendi çizdiği figürle, doğru formuyla oynar. |
+| 🎞️ **1.353 hareket** | 12 kas grubu: serbest ağırlık, makine, vücut ağırlığı, kardiyo ve Pilates. Her hareket FORMA'nın kendi çizdiği figürle, doğru formuyla oynar. |
 | ✨ **YZ koç** | Yaşını, kilonu, boyunu, haftada kaç gün çalışacağını ve hedefini söyle; sana uygun haftalık programı kursun. **İlk YZ programın ücretsiz.** |
-| 🧑‍🏫 **Eğitmeninle bağlan** | Davet koduyla bağlan. Eğitmenin programını yazar, antrenmanlarını görür; sen onaylamadan hiçbir program değişmez. |
+| 🧘 **Pilates** | Kuvvet, Pilates ya da ikisi karışık: minder hareketleri ile çember, top ve bantla çalışan programlar. |
+| ⭐ **YZ Pro** | Her ay 2 ayrıntılı program, aylık YZ ilerleme raporu, profilde ve ligde Pro rozeti, Pro avatar kiti ve 3 ayrı uygulama ikonu. |
 | 🏆 **Haftalık lig** | Set, tamamlanan gün ve kişisel rekor puan kazandırır. Seriyi koru, rozetleri topla. |
 | ⌚ **Apple Watch** | Antrenmanı saatten başlat, seti dokunarak ya da çift dokunma hareketiyle onayla, dinlenme bitince titreşim al, canlı nabzını gör. Nabız verin cihazından çıkmaz. |
+| ❤️ **Apple Sağlık** | Adımların ve aktif kalorin Bugün ekranında; biten antrenman Sağlık'a türüyle (kuvvet, Pilates…) kaydedilir. |
 | 🔒 **Önce gizlilik** | Hesapsız da kullanılır, veriler önce telefonunda tutulur. Hesabını uygulamadan tek adımda silebilirsin. |
 
 ## Ekranlar
