@@ -21,6 +21,7 @@
   <a href="https://mhmtmutlu.github.io/forma-app/gizlilik/">Gizlilik</a> ·
   <a href="https://mhmtmutlu.github.io/forma-app/kvkk/">KVKK</a> ·
   <a href="https://mhmtmutlu.github.io/forma-app/hesap-silme/">Hesap silme</a> ·
+  <a href="https://mhmtmutlu.github.io/forma-app/sorumluluk/">Sağlık ve sorumluluk</a> ·
   <a href="mailto:apps.support.mm@gmail.com?subject=FORMA%20erken%20eri%C5%9Fim">Erken erişim iste</a>
 </p>
 

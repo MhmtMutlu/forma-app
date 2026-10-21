@@ -215,6 +215,11 @@ section { padding: clamp(72px, 10vw, 130px) 0; }
 .final::before { content: ''; position: absolute; left: 50%; top: 50%; width: 900px; height: 900px; transform: translate(-50%, -50%); background: radial-gradient(circle, rgba(200, 255, 46, .14), transparent 60%); pointer-events: none; }
 .final .cta { justify-content: center; position: relative; }
 
+/* sağlık uyarısı */
+.disclaimer { padding: 0 0 48px; }
+.disclaimer p { max-width: 860px; margin: 0 auto; padding: 16px 20px; border: 1px solid var(--line); border-radius: 16px; background: var(--surface); color: var(--text2); font-size: 14px; line-height: 1.6; }
+.disclaimer strong { color: var(--text); }
+
 footer.site { border-top: 1px solid var(--line); padding: 36px 0 48px; color: var(--text2); font-size: 14px; }
 footer.site .wrap { display: flex; flex-wrap: wrap; gap: 16px 28px; justify-content: space-between; align-items: center; }
 footer.site nav { display: flex; flex-wrap: wrap; gap: 20px; }
