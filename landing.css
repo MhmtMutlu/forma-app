@@ -69,6 +69,7 @@ a { color: inherit; }
 }
 .hero .grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: clamp(24px, 5vw, 64px); align-items: center; position: relative; }
 .hero h1 { font-size: clamp(60px, 8.6vw, 124px); margin: 18px 0 22px; }
+@media (max-width: 440px) { .hero h1 { font-size: clamp(46px, 14.5vw, 60px); } }
 .hero h1 .line { display: block; }
 .hero p.lead { font-size: clamp(18px, 2vw, 21px); color: var(--text2); max-width: 34ch; margin: 0 0 30px; }
 .cta { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }

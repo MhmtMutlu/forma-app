@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Hesap Silme · FORMA</title>
-<meta name="description" content="FORMA hesabını ve tüm verini kalıcı olarak silme.">
+<title>Veri Silme · FORMA</title>
+<meta name="description" content="FORMA verilerini silme: cihazdaki verileri uygulamadan silme ve eski sürüm hesap verilerinin silinmesini isteme. FORMA data deletion.">
 <link rel="stylesheet" href="../style.css">
 <link rel="icon" href="../favicon.svg" type="image/svg+xml">
 <link rel="icon" href="../favicon.png" type="image/png">
@@ -14,60 +14,37 @@
 <main>
 <header>
   <a class="brand" href="../">FORMA</a>
-  <nav><a href="../gizlilik/">Gizlilik</a><a href="../kvkk/">KVKK</a><a href="./" aria-current="page">Hesap silme</a><a href="../sorumluluk/">Sağlık ve sorumluluk</a><a href="../kosullar/">Koşullar</a></nav>
+  <nav><a href="../gizlilik/">Gizlilik</a><a href="../kvkk/">KVKK</a><a href="./" aria-current="page">Veri silme</a><a href="../sorumluluk/">Sağlık ve sorumluluk</a><a href="../kosullar/">Koşullar</a><a href="../destek/">Destek</a></nav>
 </header>
 
-<h1>Hesabını sil</h1>
-<p class="muted">Son güncelleme: 22.10.2026</p>
-<p>Hesabını uygulamadan <strong>Profil → Hesap → Hesabımı sil</strong> ile silebilirsin. Uygulamaya erişemiyorsan aşağıdan giriş yaparak da silebilirsin.</p>
+<h1>Verilerini sil</h1>
+<p class="muted">Son güncelleme: 22.10.2026 · <a href="#english">English</a></p>
+<p class="note">FORMA'da hesap yoktur. Verilerin yalnızca cihazında durur; onları silmek için bize yazmana gerek yok.</p>
 
-<h2>Silinecekler</h2>
+<h2>Cihazındaki verileri silmek</h2>
 <ul>
-  <li>Hesabın, e-posta adresin ve profil bilgilerin</li>
-  <li>Sunucudaki antrenman geçmişin, puanların, rozetlerin ve lig sıralaman</li>
-  <li>Programların, YZ program geçmişin ve kullanılmamış YZ kredilerin (iade edilmez)</li>
-  <li>Varsa daha önce yüklenmiş tahlil / rapor dosyaların (bu özellik şu an kapalıdır)</li>
-  <li>Eğitmen bağların, (eğitmensen) davet kodların ve eğitmen taleplerindeki notların / gerekçelerin</li>
+  <li><strong>Uygulamadan:</strong> FORMA'da <strong>Verilerimi sil</strong> seçeneğini kullan ve onayla. Profilin, programların, antrenman geçmişin, puan ve rozetlerin, kilo kaydın, sağlık durumların ve onayların cihazdan kalıcı olarak silinir; uygulama ilk açılış haline döner.</li>
+  <li><strong>Uygulamayı silerek:</strong> FORMA'yı iPhone'dan sildiğinde tüm verileri de silinir.</li>
 </ul>
-<p class="muted">Silme kalıcıdır ve hemen uygulanır; yedeklerden en geç 30 gün içinde çıkar. Mevzuat gereği saklamamız gereken satın alma kayıtları (işlem kimliği, ürün, tarih) hesabınla ilişkisi kaldırılarak yasal süre (10 yıl) boyunca tutulur, sonra silinir. Mağaza makbuzların Apple / Google hesabında kalır. Cihazındaki hesapsız veriler uygulamayı silince silinir.</p>
+<p class="muted">Bizde kopya olmadığından silinen veriler geri getirilemez. Önce saklamak istersen verilerini dosya olarak dışa aktar. iCloud yedeklerindeki eski kopyalar Apple'ın yedek ayarlarından (<em>Ayarlar → [adın] → iCloud → Depolamayı Yönet → Yedekler</em>) yönetilir. FORMA'nın Apple Sağlık'a yazdığı antrenmanlar Sağlık uygulamasında kalır; istersen oradan silebilirsin.</p>
 
-<h2>Giriş yap ve sil</h2>
-<form id="f" autocomplete="on">
-  <label>E-posta <input id="email" type="email" autocomplete="email" required></label>
-  <label>Şifre <input id="password" type="password" autocomplete="current-password" required></label>
-  <label>Onaylamak için <strong>SİL</strong> yaz <input id="confirm" autocomplete="off" required></label>
-  <button id="go" class="danger" type="submit" disabled>Hesabımı kalıcı olarak sil</button>
-  <div id="msg" class="msg" role="status" aria-live="polite"></div>
-</form>
-<p class="muted">Şifreni hatırlamıyorsan uygulamadaki “Şifremi unuttum” ile sıfırlayabilir veya <a href="mailto:apps.support.mm@gmail.com?subject=Hesap%20silme%20talebi">apps.support.mm@gmail.com</a> adresine kayıtlı e-postandan yazabilirsin; talebini en geç 30 gün içinde yerine getiririz.</p>
+<h2 id="eski-hesap">Eski sürüm hesap verileri</h2>
+<p>Derleme 20'den önceki sürümlerde (TestFlight dahil) açılan bütün hesaplar ve bu hesaplara ait veriler (e-posta, görünen ad, profil, programlar, antrenman kayıtları, puan/lig, onay kayıtları, bildirim belirteçleri) <strong>22 Ekim 2026'da eski sunucumuzdan kalıcı olarak silindi</strong>; oturumlar sonlandırıldı ve sunucu yeni hesap kabul etmeyecek şekilde kapatıldı. Bu sürümlerde gerçek bir satın alma gerçekleşmediğinden saklanması gereken satın alma kaydı yoktur. Senin bir talepte bulunmana gerek yok. Sağlayıcının otomatik yedeklerinde kalabilecek kopyalar, yedek döngüsü dolduğunda kendiliğinden silinir.</p>
+<p class="muted">Sorun olursa <a href="mailto:apps.support.mm@gmail.com">apps.support.mm@gmail.com</a> adresine yazabilirsin. Yeni sürüm eski sunucuya bağlanmaz; cihazındaki yeni FORMA verilerini etkilemez.</p>
+
+<h2 id="english" lang="en">Data deletion (English)</h2>
+<div lang="en">
+<p>FORMA has no accounts. Your data is stored only on your device.</p>
+<ul>
+  <li><strong>In the app:</strong> use “Delete my data” and confirm. Your profile, programmes, workout history, points and badges, weight log, health conditions and consents are permanently removed from the device.</li>
+  <li><strong>Delete the app:</strong> removing FORMA from your iPhone also removes its data.</li>
+</ul>
+<p>We hold no copy, so deleted data cannot be recovered; export it first if you want to keep it. Copies in iCloud backups are managed in Apple's backup settings. Workouts FORMA wrote to Apple Health stay in the Health app.</p>
+<h3>Legacy account data (versions before build 20)</h3>
+<p>All accounts created in earlier versions (including TestFlight) and all their data were <strong>permanently deleted from our old server on 22 October 2026</strong>; sessions were ended and the server no longer accepts new accounts. No real purchases were made in those versions, so no purchase records are retained. You don't need to request anything. Copies that may remain in the provider's automatic backups expire with its backup cycle.</p>
+</div>
 
 <footer>© 2026 Mehmet Mutlu · <a href="../kosullar/">Koşullar</a> · <a href="../gizlilik/">Gizlilik</a> · <a href="../kvkk/">KVKK</a> · <a href="../sorumluluk/">Sağlık ve sorumluluk</a> · <a href="../destek/">Destek</a></footer>
 </main>
-
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.117.3/dist/umd/supabase.min.js"></script>
-<script>
-  // Herkese açık (publishable) anahtar: uygulamada da açıktır; erişim sunucuda RLS ve Edge Function ile korunur.
-  const SUPABASE_URL = 'https://bbbouflqqgatyzijulnk.supabase.co';
-  const SUPABASE_KEY = 'sb_publishable_CvrYBXyACRUpw33rxd_0Gg_po449j1m';
-  const sb = supabase.createClient(SUPABASE_URL, SUPABASE_KEY, { auth: { persistSession: false } });
-  const $ = (id) => document.getElementById(id);
-  const ok = () => $('confirm').value.trim().toLocaleUpperCase('tr-TR').replace(/I/g, 'İ') === 'SİL';
-  $('confirm').addEventListener('input', () => { $('go').disabled = !ok(); });
-  const say = (t, err) => { $('msg').textContent = t; $('msg').className = 'msg' + (err ? ' err' : ''); };
-  $('f').addEventListener('submit', async (e) => {
-    e.preventDefault();
-    if (!ok()) return;
-    $('go').disabled = true;
-    say('Giriş yapılıyor…');
-    const { error: signErr } = await sb.auth.signInWithPassword({ email: $('email').value.trim(), password: $('password').value });
-    if (signErr) { say('Giriş başarısız: e-posta veya şifre hatalı.', true); $('go').disabled = false; return; }
-    say('Hesabın siliniyor…');
-    const { error } = await sb.functions.invoke('account/delete', { body: { confirm: 'SİL' } });
-    await sb.auth.signOut({ scope: 'local' }).catch(() => {});
-    if (error) { say('Hesap silinemedi. Lütfen tekrar dene veya bize yaz.', true); $('go').disabled = false; return; }
-    $('f').reset();
-    say('Hesabın ve tüm verin kalıcı olarak silindi.');
-  });
-</script>
 </body>
 </html>
