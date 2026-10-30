@@ -18,4 +18,4 @@
 
 ---
 
-<sub>Bu depo FORMA'nın herkese açık sayfalarını (GitHub Pages) barındırır. Kaynak, özel `forma` deposundaki `apps/site-local` klasörüdür; buraya `SITE_DIR=apps/site-local scripts/publish-site.sh` ile kopyalanır, elle düzenlenmez. · Destek: <a href="mailto:apps.support.mm@gmail.com">apps.support.mm@gmail.com</a> · © 2026 Mehmet Mutlu</sub>
+<sub>Bu depo FORMA'nın herkese açık sayfalarını (GitHub Pages) barındırır. Kaynak, özel `forma` deposundaki `apps/site-local` klasörüdür; buraya `SITE_DIR=apps/site-local scripts/publish-site.sh` ile kopyalanır, elle düzenlenmez. · Destek: <a href="mailto:destek@mm-apps.com">destek@mm-apps.com</a> · © 2026 Mehmet Mutlu</sub>
