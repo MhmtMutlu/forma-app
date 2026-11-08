@@ -8,12 +8,12 @@
 </p>
 
 <p align="center">
-  <a href="https://mhmtmutlu.github.io/forma-app/"><b>Tanıtım sayfası</b></a> ·
-  <a href="https://mhmtmutlu.github.io/forma-app/gizlilik/">Gizlilik</a> ·
-  <a href="https://mhmtmutlu.github.io/forma-app/kvkk/">KVKK</a> ·
-  <a href="https://mhmtmutlu.github.io/forma-app/hesap-silme/">Veri silme</a> ·
-  <a href="https://mhmtmutlu.github.io/forma-app/sorumluluk/">Sağlık ve sorumluluk</a> ·
-  <a href="https://mhmtmutlu.github.io/forma-app/destek/">Destek</a>
+  <a href="https://forma.mm-apps.com/"><b>Tanıtım sayfası</b></a> ·
+  <a href="https://forma.mm-apps.com/gizlilik/">Gizlilik</a> ·
+  <a href="https://forma.mm-apps.com/kvkk/">KVKK</a> ·
+  <a href="https://forma.mm-apps.com/hesap-silme/">Veri silme</a> ·
+  <a href="https://forma.mm-apps.com/sorumluluk/">Sağlık ve sorumluluk</a> ·
+  <a href="https://forma.mm-apps.com/destek/">Destek</a>
 </p>
 
 ---
